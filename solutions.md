@@ -42,3 +42,7 @@ degree_id, inserire un valore casuale)
 7. SELECT COUNT(*) as `n_dipartimenti` FROM `departments`; 
 
 8. SELECT COUNT(*) as `null_number` FROM `teachers` WHERE `phone` IS NULL; 
+
+||BONUS||
+
+9. INSERT INTO `students`(`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('6','Wendigo','Fungi','2002-08-14','wndgfng08080808','2024-09-12','666','wendigo.notdisturbthefungi@forest.it'); 
