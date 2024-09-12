@@ -32,3 +32,5 @@ degree_id, inserire un valore casuale)
 2. SELECT * FROM `courses` WHERE `cfu` > 10; 
 
 3. SELECT * FROM `students` WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
+
+4. SELECT * FROM `courses` WHERE `period` LIKE 'I semestre' AND `year` = 1;
