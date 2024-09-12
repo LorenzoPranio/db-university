@@ -26,3 +26,5 @@ degree_id, inserire un valore casuale)
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
 
 ||RISPOSTE||
+
+1. SELECT * FROM `students` WHERE YEAR(`date_of_birth`) = 1990; 
