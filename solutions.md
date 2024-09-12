@@ -40,3 +40,5 @@ degree_id, inserire un valore casuale)
 6. SELECT * FROM `degrees` WHERE `level` LIKE 'magistrale'; 
 
 7. SELECT COUNT(*) as `n_dipartimenti` FROM `departments`; 
+
+8. SELECT COUNT(*) as `null_number` FROM `teachers` WHERE `phone` IS NULL; 
