@@ -46,3 +46,5 @@ degree_id, inserire un valore casuale)
 ||BONUS||
 
 9. INSERT INTO `students`(`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('6','Wendigo','Fungi','2002-08-14','wndgfng08080808','2024-09-12','666','wendigo.notdisturbthefungi@forest.it'); 
+
+10. UPDATE `teachers` SET office_number='126' WHERE `name` LIKE 'Pietro' AND `surname` LIKE 'Rizzo'; 
