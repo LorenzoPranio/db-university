@@ -104,18 +104,22 @@ filtrare i tentativi con voto minimo 18.
 
 ||RISPOSTE CON JOIN||
 
-1.  SELECT `students.name`, `students.surname`, `students.registration_number`
+1.  SELECT `students`.`name`, `students`.`surname`, `students`.`registration_number`
     FROM `students`
-    JOIN `degrees` ON `students.degree_id` = `degrees.id`
-    WHERE `degrees.name` = 'Degree Course in Economy';
+    JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id`
+    WHERE `degrees`.`name` = 'Degree Course in Economy';
 
-2.  SELECT `degrees.name` AS `course_name`, `departments.name` AS `name_department`
+2.  SELECT `degrees`.`name` AS `course_name`, `departments`.`name` AS `name_department`
     FROM `degrees`
-    JOIN `departments` ON `degrees.department_id` = `departments.id`
-    WHERE `departments.name` = 'Department of Neuroscience'
-    AND `degrees.level` = 'masterful';
+    JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
+    WHERE `departments`.`name` = 'Department of Neuroscience'
+    AND `degrees`.`level` = 'masterful';
 
-3.
+3.  SELECT `courses`.`name` AS `course_of_Fuvio_Amato`
+    FROM `courses`
+    JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
+    JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id`
+    WHERE `teachers`.`id` = 44;
 
 4.
 
