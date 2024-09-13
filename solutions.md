@@ -127,7 +127,12 @@ filtrare i tentativi con voto minimo 18.
     JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
     ORDER BY `students`.`surname`, `students`.`name`;
 
-5.
+5.  SELECT `degrees`.`name` AS `name_degree`, `courses`.`name` AS `name_course`, `teachers`.`name` AS `name_teacher`, `teachers`.`surname` AS `surname_teacher`
+    FROM `degrees`
+    JOIN `courses` ON `courses`.`degree_id` = `degrees`.`id`
+    JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id`
+    JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+    ORDER BY `name_degree`, `name_course`;
 
 6.
 
