@@ -68,7 +68,9 @@ degree_id, inserire un valore casuale)
     FROM `students`
     GROUP BY YEAR(`enrolment_date`);
 
-2.
+2.  SELECT COUNT() AS `teachers_quantity`, `office_address`
+    FROM `teachers`
+    GROUP BY `office_address`
 
 3.
 
