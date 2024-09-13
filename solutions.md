@@ -64,7 +64,9 @@ degree_id, inserire un valore casuale)
 
 ||RISPOSTE CON GROUP BY||
 
-1.
+1.  SELECT COUNT(*) AS number_students, YEAR(`enrolment_date`) AS `entolment_year`
+    FROM `students`
+    GROUP BY YEAR(`enrolment_date`);
 
 2.
 
