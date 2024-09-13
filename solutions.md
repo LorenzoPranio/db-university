@@ -109,7 +109,11 @@ filtrare i tentativi con voto minimo 18.
     JOIN `degrees` ON `students.degree_id` = `degrees.id`
     WHERE `degrees.name` = 'Degree Course in Economy';
 
-2.
+2.  SELECT `degrees.name` AS `course_name`, `departments.name` AS `name_department`
+    FROM `degrees`
+    JOIN `departments` ON `degrees.department_id` = `departments.id`
+    WHERE `departments.name` = 'Department of Neuroscience'
+    AND `degrees.level` = 'masterful';
 
 3.
 
