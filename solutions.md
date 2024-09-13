@@ -104,7 +104,10 @@ filtrare i tentativi con voto minimo 18.
 
 ||RISPOSTE CON JOIN||
 
-1.
+1.  SELECT `students.name`, `students.surname`, `students.registration_number`
+    FROM `students`
+    JOIN `degrees` ON `students.degree_id` = `degrees.id`
+    WHERE `degrees.name` = 'Degree Course in Economy';
 
 2.
 
