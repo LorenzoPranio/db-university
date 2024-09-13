@@ -134,6 +134,12 @@ filtrare i tentativi con voto minimo 18.
     JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
     ORDER BY `name_degree`, `name_course`;
 
-6.
+6.  SELECT `teachers`.`name`, `teachers`.`surname`
+    FROM `teachers`
+    JOIN `course_teacher` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+    JOIN `courses` ON `course_teacher`.`course_id` = `courses`.`id`
+    JOIN `degrees` ON `courses`.`degree_id` = `degrees`.`id`
+    JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
+    WHERE `departments`.`name` = 'Department of Mathematics';
 
 7. BONUS:
